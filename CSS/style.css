@@ -1,0 +1,290 @@
+* {
+	box-sizing:border-box;
+	padding:0;
+	margin: 0;
+}
+
+body {
+	font-family: "Quicksand", sans-serif;
+	font-style: normal;
+}
+
+header {
+	width: 100%;
+	height: auto;
+	background-color: purple;
+	display:flex;
+}
+
+#logotip {
+	width: 50%;
+	height:auto;
+	
+}
+
+#logotip img {
+	width: 20%;
+	margin: 30px;
+}
+
+nav {
+	width: 50%;
+	display:flex;
+}
+
+#menu{
+	width: 100%;
+	display:flex;
+	justify-content: space-evenly;
+	flex-direction: row;
+	list-style:none;
+	padding: 5vh;
+/*	background-color: yellow;*/
+}
+
+.linksmenu {
+	width: auto;
+	margin: 5%;
+	font-weight: bold;
+	font-size: 1.2rem;
+/*	background-color: red;*/
+}
+
+.linksmenu a {
+	width: auto;
+	margin: 0px 10px;
+	text-decoration: none;
+	color: white;
+}
+
+.linksmenu a:hover {
+	text-decoration-line: underline;
+	text-decoration-thickness: 1px;
+}
+
+hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+        align-items: center;
+        justify-content: center;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*ABOUT*/
+
+#about {
+	width: 100vw;
+	height: auto;
+	background-color: seagreen;
+	display: flex;
+	padding: 10%;
+	font-display: row;
+	align-items: center;
+}
+
+#about>h2	{
+	font-size: 3rem;
+	width: 50%;	
+}
+
+#about>p {
+	font-size: 1.2rem;
+	width: 50%;	
+}
+
+/*footer*/
+
+footer {
+	background-color: purple;
+	padding: 10%;
+}
+
+#footerCaixa {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.footerSection {
+	width: 25%;
+}
+
+.footerSection>h2	{
+	font-size: 3rem;
+	color: white;	
+}
+
+.footerSection>p {
+	font-size: 1.2rem;
+	color: white;
+}
+
+.Contacte>p {
+		padding-bottom: 5%;
+	}
+
+.Links>p {
+		padding-bottom: 5%;
+	}
+
+
+@media screen and (max-width: 768px) {
+	#menu {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	#about {
+		flex-direction: column;
+	}
+
+	#about>h2 {
+		width: 100%;	
+		padding-bottom: 5%;
+	}
+
+	#about>p {
+		width: 100%;	
+	}
+
+	#footerCaixa {
+		flex-direction: column;
+	}
+
+	.footerSection {
+		width: 100%;
+		padding-bottom: 5%;
+	}
+
+}
+
+                                     /*GRUPS*/
+
+
+
+#grups {
+	width: 100vw;
+	height: auto;
+	background-color: #42D185;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 50px 0px;
+}
+
+.imgGrups {
+	width: calc(45% - 30px);
+	margin: 15px;
+}
+
+.imgGrups>img {
+	width: 100%;
+	height: auto;
+}
+
+.imgGrups>h2 {
+	margin-top: 10px;
+	font-size: 2rem;
+}
+
+.imgGrups>p {
+	margin-top: 10px;
+}
+
+
+								/*CONTACTE*/
+
+.contacte {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	flex-direction: row;
+	background-color: #42D185;
+	padding: 5% 10%	5% 10%;
+
+}
+
+.formulari {
+	width: 50%;
+/*	background-color: blue;*/
+}
+
+.mapa {
+	width: 50%;
+/*	background-color: cyan;*/
+}
+
+#ulForm {
+	list-style: none;
+	padding: 10%;
+}
+
+button {
+	font-size: 1rem;
+	margin-top: 20px;
+	padding: 2px;
+}
+
+label {
+	display: block;
+	padding-top: 20px;
+}
+
+input {
+	width: 80%;
+/*	background-color: orange;*/
+}
+
+textarea {
+	width: 80%;
+/*	background-color: cyan;*/
+}
+
+mapa {
+	width: 50%;
+	padding-left: 10%;
+}
+
+@media screen and (max-width: 768px) {
+
+	#grups{
+		flex-direction: column;
+		display: flex;
+		justify-content: center;
+	}
+
+	.imgGrups {
+		width: 80%;
+		margin: auto;
+		margin-top: 5%;
+	}
+
+	/*mediaq contacte*/
+
+	.contacte {
+		flex-direction: column;
+	}
+
+	.formulari {
+		width: 100%;
+	}
+
+	.mapa {
+		width: 100%;
+		padding-left: 0px;
+	}
+
+}
